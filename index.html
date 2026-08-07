@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GOURP – Método Celular FiveM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== PARTICLES BACKGROUND ===== -->
+  <div id="particles"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">GOURP</span>
+      <div class="nav-actions">
+        <a href="https://discord.gg/gourp" target="_blank" rel="noopener" class="nav-discord" aria-label="Entrar no Discord">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+          </svg>
+          <span></span>Discord</span>
+        </a>
+        <a href="#cta" class="nav-cta">QUERO AGORA</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO / VSL ===== -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">🎮 EXCLUSIVO PARA FIVEM</div>
+      <h1 class="hero-title">
+        O <span class="highlight">Método</span> que vai te fazer jogar<br />
+        FiveM no <span class="highlight">celular</span> como nunca antes
+      </h1>
+      <p class="hero-sub">
+        Aprenda do zero, passo a passo, como rodar FiveM no celular com qualidade, estabilidade e sem travar. 
+        Método exclusivo da <strong>GOURP</strong>.
+      </p>
+
+      <!-- VSL VIDEO -->
+      <div class="vsl-wrapper">
+        <div class="vsl-glow"></div>
+        <div class="vsl-container">
+          <video id="heroVideo" controls preload="metadata" poster="">
+            <source src="Copy 0096Cdb6-8F12-4D2e-B50d-8356D7819ca8.mp4" type="video/mp4" />
+            Seu navegador não suporta vídeo HTML5.
+          </video>
+          <div class="vsl-overlay" id="vslOverlay">
+            <button class="play-btn" id="playBtn" aria-label="Assistir apresentação">
+              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="40" cy="40" r="39" stroke="white" stroke-width="2"/>
+                <polygon points="30,20 65,40 30,60" fill="white"/>
+              </svg>
+              <span>ASSISTIR APRESENTAÇÃO</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- HERO CTA -->
+      <div class="hero-cta-block">
+        <a href="https://www.goupay.com.br/checkout/68033a03-692d-44a3-b21b-ab8496448140" target="_blank" rel="noopener" class="btn-primary pulse">
+          🚀 QUERO O MÉTODO AGORA
+        </a>
+        <p class="hero-guarantee">✅ Acesso imediato • 🔒 Compra segura • 💥 Pague uma vez</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOCIAL PROOF NUMBERS ===== -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-number" data-target="1897">0</span>
+          <span class="stat-plus">+</span>
+          <p class="stat-label">Alunos ativos</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="98">0</span>
+          <span class="stat-plus">%</span>
+          <p class="stat-label">de satisfação</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="5">0</span>
+          <span class="stat-plus">★</span>
+          <p class="stat-label">Avaliação média</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="30">0</span>
+          <span class="stat-plus">min</span>
+          <p class="stat-label">Para configurar tudo</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOBRE O MÉTODO ===== -->
+  <section class="about-section">
+    <div class="container">
+      <div class="section-label">O QUE É ISSO?</div>
+      <h2 class="section-title">Um método <span class="highlight">passo a passo</span><br/>para jogar FiveM no celular</h2>
+      <p class="section-desc">
+        Cansado de ficar preso no PC para jogar FiveM? Com o <strong>Método GOURP</strong> você aprende a configurar, conectar e jogar seus servidores favoritos diretamente do seu celular — com qualidade real, sem lag e sem complicação.
+      </p>
+      <div class="about-cards">
+        <div class="about-card reveal">
+          <div class="card-icon">📱</div>
+          <h3>100% no Celular</h3>
+          <p>Configuração completa para rodar diretamente do seu celular, sem colocar nada no PC.</p>
+        </div>
+        <div class="about-card reveal">
+          <div class="card-icon">⚡</div>
+          <h3>Rápido e Estável</h3>
+          <p>Funciona Tanto em Android ou IOS.</p>
+        </div>
+        <div class="about-card reveal">
+          <div class="card-icon">🎯</div>
+          <h3>Do Zero ao Avançado</h3>
+          <p>Não precisa ter experiência. O método é didático, com vídeos e tutoriais completos.</p>
+        </div>
+        <div class="about-card reveal">
+          <div class="card-icon">🔒</div>
+          <h3>Suporte Exclusivo</h3>
+          <p>Oferecemos acesso ao grupo exclusivo do METODO com suporte direto para tirar todas as suas dúvidas e com muitas outras ventagens.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== O QUE VOCÊ VAI APRENDER ===== -->
+  <section class="learn-section">
+    <div class="container">
+      <div class="section-label">CONTEÚDO</div>
+      <h2 class="section-title">Suas <span class="highlight">Vantagens</span></h2>
+      <div class="learn-list">
+        <div class="learn-item reveal"><span class="check">✔</span> Sem precisar baixar nada no PC</div>
+        <div class="learn-item reveal"><span class="check">✔</span> Controle tudo diretamente pelo celular</div>
+        <div class="learn-item reveal"><span class="check">✔</span> Sistema leve, seguro e inovador</div>
+        <div class="learn-item reveal"><span class="check">✔</span> Funciona tanto em Android ou IOS</div>
+        <div class="learn-item reveal"><span class="check">✔</span> Não precisa comprar adaptadores ou acessórios extras</div>
+        <div class="learn-item reveal"><span class="check">✔</span> Funciona normalmente em compartilhamento/telagem no FiveM</div>
+        <div class="learn-item reveal"><span class="check">✔</span> Menu vitalício (Lifetime): pague apenas uma vez e use para sempre/div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEEDBACKS IMAGENS ===== -->
+  <section class="feedbacks-section" id="feedbacks">
+    <div class="container">
+      <div class="section-label">RESULTADOS REAIS</div>
+      <h2 class="section-title">O que nossos <span class="highlight">alunos</span> dizem</h2>
+      <p class="section-desc">Centenas de pessoas já aplicaram o método e estão jogando FiveM no celular agora mesmo.</p>
+
+      <div class="img-feedbacks-grid">
+        <div class="img-feedback-card reveal">
+          <img src="https://i.imgur.com/22eAj2b.jpeg" alt="Feedback de aluno 1" loading="lazy" />
+        </div>
+        <div class="img-feedback-card reveal">
+          <img src="https://i.imgur.com/G9Vx5ox.jpeg" alt="Feedback de aluno 2" loading="lazy" />
+        </div>
+        <div class="img-feedback-card reveal">
+          <img src="https://i.imgur.com/kBvHa7Q.jpeg" alt="Feedback de aluno 3" loading="lazy" />
+        </div>
+        <div class="img-feedback-card reveal">
+          <img src="https://i.imgur.com/BvRH1Bg.jpeg" alt="Feedback de aluno 4" loading="lazy" />
+        </div>
+        <div class="img-feedback-card reveal">
+          <img src="https://i.imgur.com/EiDJgJJ.jpeg" alt="Feedback de aluno 5" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEEDBACKS EM VÍDEO ===== -->
+  <section class="video-feedbacks-section">
+    <div class="container">
+      <div class="section-label">DEPOIMENTOS EM VÍDEO</div>
+      <h2 class="section-title">Veja quem já está <span class="highlight">jogando</span></h2>
+      <div class="video-feedbacks-grid">
+
+        <div class="video-feedback-card reveal">
+          <div class="vf-thumb" data-driveid="1nX_YbNaLuXivrDP9zEmMCaQcFaKOIeZm">
+            <img src="https://drive.google.com/thumbnail?id=1nX_YbNaLuXivrDP9zEmMCaQcFaKOIeZm&sz=w400" alt="Depoimento 1" loading="lazy" onerror="this.src='https://placehold.co/400x225/111/fff?text=Depoimento+1'" />
+            <div class="vf-play"><svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="29" stroke="white" stroke-width="2"/><polygon points="22,15 50,30 22,45" fill="white"/></svg></div>
+          </div>
+          <p class="vf-name">Depoimento #1</p>
+        </div>
+
+        <div class="video-feedback-card reveal">
+          <div class="vf-thumb" data-driveid="18Br0tI5tRE-tbk90hOnQhlNWyHWexFVA">
+            <img src="https://drive.google.com/thumbnail?id=18Br0tI5tRE-tbk90hOnQhlNWyHWexFVA&sz=w400" alt="Depoimento 2" loading="lazy" onerror="this.src='https://placehold.co/400x225/111/fff?text=Depoimento+2'" />
+            <div class="vf-play"><svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="29" stroke="white" stroke-width="2"/><polygon points="22,15 50,30 22,45" fill="white"/></svg></div>
+          </div>
+          <p class="vf-name">Depoimento #2</p>
+        </div>
+
+        <div class="video-feedback-card reveal">
+          <div class="vf-thumb" data-driveid="1D1oGJBVWZd2C17vzvusKU6qglo5JF4XG">
+            <img src="https://drive.google.com/thumbnail?id=1D1oGJBVWZd2C17vzvusKU6qglo5JF4XG&sz=w400" alt="Depoimento 3" loading="lazy" onerror="this.src='https://placehold.co/400x225/111/fff?text=Depoimento+3'" />
+            <div class="vf-play"><svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="29" stroke="white" stroke-width="2"/><polygon points="22,15 50,30 22,45" fill="white"/></svg></div>
+          </div>
+          <p class="vf-name">Depoimento #3</p>
+        </div>
+
+        <div class="video-feedback-card reveal">
+          <div class="vf-thumb" data-driveid="1eepZGUpZjlGMm9UIvAF5hrjHFuWUZ3TB">
+            <img src="https://drive.google.com/thumbnail?id=1eepZGUpZjlGMm9UIvAF5hrjHFuWUZ3TB&sz=w400" alt="Depoimento 4" loading="lazy" onerror="this.src='https://placehold.co/400x225/111/fff?text=Depoimento+4'" />
+            <div class="vf-play"><svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="29" stroke="white" stroke-width="2"/><polygon points="22,15 50,30 22,45" fill="white"/></svg></div>
+          </div>
+          <p class="vf-name">Depoimento #4</p>
+        </div>
+
+        <div class="video-feedback-card reveal">
+          <div class="vf-thumb" data-driveid="1R5Z2F-Tvbf5Te9e5J4mA6vZvUQS1aCJG">
+            <img src="https://drive.google.com/thumbnail?id=1R5Z2F-Tvbf5Te9e5J4mA6vZvUQS1aCJG&sz=w400" alt="Depoimento 5" loading="lazy" onerror="this.src='https://placehold.co/400x225/111/fff?text=Depoimento+5'" />
+            <div class="vf-play"><svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="29" stroke="white" stroke-width="2"/><polygon points="22,15 50,30 22,45" fill="white"/></svg></div>
+          </div>
+          <p class="vf-name">Depoimento #5</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO MODAL -->
+  <div class="modal-overlay" id="videoModal" role="dialog" aria-modal="true" aria-label="Vídeo depoimento">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose" aria-label="Fechar vídeo">✕</button>
+      <div class="modal-video-wrap">
+        <iframe id="modalIframe" src="" allow="autoplay; fullscreen" allowfullscreen frameborder="0"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CTA FINAL ===== -->
+  <section class="cta-section" id="cta">
+    <div class="cta-glow"></div>
+    <div class="container cta-inner">
+      <div class="section-label">OFERTA ESPECIAL</div>
+      <h2 class="cta-title">Comece agora e X1te<br /><span class="highlight">No FiveM pelo celular</span></h2>
+
+      <div class="price-block">
+        <span class="price-old">De R$ 97</span>
+        <div class="price-main">
+          <span class="price-currency">R$</span>
+          <span class="price-value">29</span>
+          <span class="price-period">,90</span>
+        </div>
+        <span class="price-tag">💥 Pagamento único · Pague uma vez, acesso para sempre</span>
+      </div>
+
+      <a href="https://www.goupay.com.br/checkout/68033a03-692d-44a3-b21b-ab8496448140" target="_blank" rel="noopener" class="btn-primary btn-xl pulse">
+        🚀 QUERO O MÉTODO AGORA
+      </a>
+
+      <div class="cta-trust">
+        <span>🔒 Compra 100% segura</span>
+        <span>⚡ Acesso imediato</span>
+        <span>✅ Suporte garantido</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-logo">GOURP</p>
+      <p class="footer-copy">© 2025 GOURP. Todos os direitos reservados.</p>
+      <p class="footer-disc">Este produto é digital. Após a confirmação do pagamento, o acesso é liberado imediatamente.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
